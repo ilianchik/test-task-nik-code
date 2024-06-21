@@ -1,5 +1,3 @@
-import styles from "./loading.module.scss";
-
 function loading() {
   return (
     <div>

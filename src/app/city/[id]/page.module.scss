@@ -1,5 +1,5 @@
 .container {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   position: relative;
   padding-top: 50px;
@@ -19,4 +19,7 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
+  @media (max-width: 500px) {
+    top: 10px;
+  }
 }

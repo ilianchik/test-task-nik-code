@@ -4,4 +4,10 @@
   gap: 30px;
   padding-top: 50px;
   justify-items: center;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 }
