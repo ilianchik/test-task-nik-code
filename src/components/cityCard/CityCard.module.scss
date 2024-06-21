@@ -2,3 +2,13 @@
   display: block;
   margin: 0 auto;
 }
+.listElement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px black solid;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5%;
+  cursor: pointer;
+}

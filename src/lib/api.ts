@@ -1,6 +1,6 @@
 export async function getCities() {
   const url =
-    "https://wft-geo-db.p.rapidapi.com/v1/geo/cities?minPopulation=1000000&limit=10";
+    "https://wft-geo-db.p.rapidapi.com/v1/geo/cities?minPopulation=500000&limit=10";
   const options = {
     cache: "no-store" as RequestCache,
     method: "GET",
@@ -39,26 +39,26 @@ export async function getCityPicture(city: string) {
   }
 }
 
-// export async function getCityInfo(id: string) {
-//   const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities/${id}`;
-//   const options = {
-//     cache: "no-store" as RequestCache,
-//     method: "GET",
-//     headers: {
-//       "x-rapidapi-key": "1adfc28d5amshe555dd2f1800646p133ffbjsne97adaff3276",
-//       "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
-//     },
-//   };
+export async function getCityInfo(id: string) {
+  const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities/${id}`;
+  const options = {
+    cache: "no-store" as RequestCache,
+    method: "GET",
+    headers: {
+      "x-rapidapi-key": "1adfc28d5amshe555dd2f1800646p133ffbjsne97adaff3276",
+      "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
+    },
+  };
 
-//   try {
-//     const response = await fetch(url, options);
-//     if (!response.ok) {
-//       throw new Error(`Error: ${response.status} ${response.statusText}`);
-//     }
-//     const result = await response.json();
-//     return result.data;
-//   } catch (error) {
-//     console.error("Failed to fetch city info:", error);
-//     return null;
-//   }
-// }
+  try {
+    const response = await fetch(url, options);
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+    const result = await response.json();
+    return result.data;
+  } catch (error) {
+    console.error("Failed to fetch city info:", error);
+    return null;
+  }
+}

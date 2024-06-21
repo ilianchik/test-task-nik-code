@@ -31,4 +31,4 @@ export type cityDetails = {
   population: number;
   timezone: string;
   deleted: boolean;
-};
+} | null;

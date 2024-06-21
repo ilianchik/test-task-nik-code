@@ -1,5 +1,11 @@
+import styles from "./loading.module.scss";
+
 function loading() {
-  return <div>Loading</div>;
+  return (
+    <div>
+      <p>Loading</p>
+    </div>
+  );
 }
 
 export default loading;
