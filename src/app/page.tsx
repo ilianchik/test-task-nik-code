@@ -1,6 +1,6 @@
-import { getCities } from "@/lib/api";
 import styles from "./page.module.scss";
 import CityCard from "@/components/cityCard/CityCard";
+import { getCities } from "@/lib/api";
 import { city } from "@/types/types";
 
 export default async function Home() {

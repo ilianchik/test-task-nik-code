@@ -1,14 +1,23 @@
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
   padding-top: 50px;
   justify-items: center;
 }
 .listElement {
   display: flex;
-}
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px black solid;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5%;
+  cursor: pointer;
 }
