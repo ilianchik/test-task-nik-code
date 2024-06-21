@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./cityCard.module.scss";
+import styles from "./CityCard.module.scss";
 import { city, cityDetails } from "@/types/types";
 import { getCityInfo, getCityPicture } from "@/lib/api";
 import Image from "next/image";
